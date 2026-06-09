@@ -184,8 +184,7 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.2em] text-ink/60">
                 Service Hours
               </p>
-              <p className="mt-2 font-medium">Mon - Sat: 11:00 AM - 8:00 PM</p>
-              <p className="font-medium">Sunday: 11:00 AM - 4:00 PM</p>
+              <p className="mt-2 font-medium">Mon - Fri: 11:00 AM - 2:30 PM</p>
             </div>
           </aside>
         </section>
