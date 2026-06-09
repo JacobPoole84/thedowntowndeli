@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Take-Out and Delivery Deli in Florence, AL",
+    title: "Take-Out and Delivery Deli in Florence, SC",
     description:
       "Order premium deli take-out and delivery from The Downtown Deli - Florence.",
     url: "/",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Take-Out and Delivery Deli in Florence, AL",
+    title: "Take-Out and Delivery Deli in Florence, SC",
     description:
       "Order premium deli take-out and delivery from The Downtown Deli - Florence.",
     images: ["/opengraph-image"],
@@ -60,11 +60,11 @@ export default function Home() {
       "@type": "PostalAddress",
       ...(streetAddress ? { streetAddress } : {}),
       addressLocality: "Florence",
-      addressRegion: "AL",
+      addressRegion: "SC",
       ...(postalCode ? { postalCode } : {}),
       addressCountry: "US",
     },
-    areaServed: "Florence, AL",
+    areaServed: "Florence, SC and surrounding areas",
     acceptsReservations: "False",
     hasMenu: squareOrderLink,
     potentialAction: {
