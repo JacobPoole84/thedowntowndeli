@@ -173,7 +173,7 @@ export default function Home() {
             <h3 className="font-title text-3xl">What You Can Count On</h3>
             <ul className="mt-6 space-y-4 text-base text-ink/80">
               <li>Simple, fresh deli food without unnecessary fuss</li>
-              <li>Friendly, professional service that respects your time</li>
+              <li>Friendly, professional service that respects your time and appreciates your business</li>
             </ul>
             <div className="mt-8 border-t border-ink/10 pt-6">
               <p className="text-xs uppercase tracking-[0.2em] text-ink/60">
