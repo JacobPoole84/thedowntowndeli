@@ -3,12 +3,15 @@ import type { Metadata } from "next";
 
 const siteUrl =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.thedowntowndeli.com";
-const restaurantPhone = process.env.NEXT_PUBLIC_RESTAURANT_PHONE;
+const restaurantPhone =
+  process.env.NEXT_PUBLIC_RESTAURANT_PHONE ?? "(843) 407-4944";
 const restaurantEmail = process.env.NEXT_PUBLIC_RESTAURANT_EMAIL;
-const streetAddress = process.env.NEXT_PUBLIC_STREET_ADDRESS;
+const streetAddress =
+  process.env.NEXT_PUBLIC_STREET_ADDRESS ?? "378 W Evans St.";
 const postalCode = process.env.NEXT_PUBLIC_POSTAL_CODE;
 const latitude = process.env.NEXT_PUBLIC_LATITUDE;
 const longitude = process.env.NEXT_PUBLIC_LONGITUDE;
+const phoneHref = `tel:${restaurantPhone.replace(/[^\d+]/g, "")}`;
 
 const socialProfiles = [
   process.env.NEXT_PUBLIC_FACEBOOK_URL,
@@ -60,7 +63,7 @@ export default function Home() {
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      ...(streetAddress ? { streetAddress } : {}),
+      streetAddress,
       addressLocality: "Florence",
       addressRegion: "SC",
       ...(postalCode ? { postalCode } : {}),
@@ -90,9 +93,7 @@ export default function Home() {
     ],
   };
 
-  if (restaurantPhone) {
-    localBusinessSchema.telephone = restaurantPhone;
-  }
+  localBusinessSchema.telephone = restaurantPhone;
 
   if (restaurantEmail) {
     localBusinessSchema.email = restaurantEmail;
@@ -224,7 +225,11 @@ export default function Home() {
         </a>
 
         <footer className="mt-10 text-sm text-ink/60">
-          The Downtown Deli - Florence • Take-Out & Delivery
+          <p>The Downtown Deli - Florence • Take-Out & Delivery</p>
+          <p>{streetAddress} Florence, SC</p>
+          <a className="underline-offset-4 hover:underline" href={phoneHref}>
+            {restaurantPhone}
+          </a>
         </footer>
       </main>
     </div>
