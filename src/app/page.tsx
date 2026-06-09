@@ -81,10 +81,9 @@ export default function Home() {
           "Wednesday",
           "Thursday",
           "Friday",
-          "Saturday",
         ],
         opens: "11:00",
-        closes: "20:00",
+        closes: "14:30",
       },
       {
         "@type": "OpeningHoursSpecification",
