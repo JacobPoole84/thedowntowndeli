@@ -162,7 +162,7 @@ export default function Home() {
                 className="inline-flex items-center justify-center rounded-full bg-ink px-8 py-4 text-sm font-semibold uppercase tracking-[0.18em] text-ivory transition-transform duration-300 hover:-translate-y-0.5 hover:bg-ink/90"
                 href={squareOrderLink}
               >
-                Order on Square
+                Order Now
               </a>
               <p className="text-sm uppercase tracking-[0.16em] text-ink/60">
                 Fast pickup and local delivery
@@ -221,7 +221,7 @@ export default function Home() {
           className="mt-14 inline-flex w-full items-center justify-center rounded-2xl border border-claret/45 bg-claret px-6 py-5 text-center text-sm font-semibold uppercase tracking-[0.2em] text-ivory transition-colors hover:bg-claret/90 sm:w-auto"
           href={squareOrderLink}
         >
-          Place Your Order Through Square
+          Place Your Order
         </a>
 
         <footer className="mt-10 text-sm text-ink/60">
