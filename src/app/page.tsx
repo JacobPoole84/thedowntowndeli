@@ -145,7 +145,7 @@ export default function Home() {
         <section className="grid items-end gap-12 lg:grid-cols-[1.15fr_0.85fr]">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-ink/65">
-              Take-Out and Delivery Only
+              Take-Out and Delivery
             </p>
             <h2 className="font-title text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
               Fresh deli food.
