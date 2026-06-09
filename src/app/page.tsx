@@ -8,7 +8,7 @@ const restaurantPhone =
 const restaurantEmail = process.env.NEXT_PUBLIC_RESTAURANT_EMAIL;
 const streetAddress =
   process.env.NEXT_PUBLIC_STREET_ADDRESS ?? "378 W Evans St.";
-const postalCode = process.env.NEXT_PUBLIC_POSTAL_CODE;
+const postalCode = process.env.NEXT_PUBLIC_POSTAL_CODE ?? "29501";
 const latitude = process.env.NEXT_PUBLIC_LATITUDE;
 const longitude = process.env.NEXT_PUBLIC_LONGITUDE;
 const phoneHref = `tel:${restaurantPhone.replace(/[^\d+]/g, "")}`;
@@ -66,7 +66,7 @@ export default function Home() {
       streetAddress,
       addressLocality: "Florence",
       addressRegion: "SC",
-      ...(postalCode ? { postalCode } : {}),
+      postalCode,
       addressCountry: "US",
     },
     areaServed: "Florence, SC and surrounding areas",
@@ -226,7 +226,9 @@ export default function Home() {
 
         <footer className="mt-10 text-sm text-ink/60">
           <p>The Downtown Deli - Florence • Take-Out & Delivery</p>
-          <p>{streetAddress} Florence, SC</p>
+          <p>
+            {streetAddress} Florence, SC {postalCode}
+          </p>
           <a className="underline-offset-4 hover:underline" href={phoneHref}>
             {restaurantPhone}
           </a>
