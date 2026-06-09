@@ -190,7 +190,6 @@ export default function Home() {
 
         <section className="mt-16 grid gap-5 sm:grid-cols-3">
           <article className="fade-up rounded-2xl border border-ink/10 bg-white/65 p-6 backdrop-blur-sm">
-            <p className="text-xs uppercase tracking-[0.2em] text-ink/55">01</p>
             <h3 className="mt-2 font-title text-2xl">Focused Menu</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">
               Sandwiches, wraps, salads, soups, and sides made for speed,
@@ -198,7 +197,6 @@ export default function Home() {
             </p>
           </article>
           <article className="fade-up rounded-2xl border border-ink/10 bg-white/65 p-6 backdrop-blur-sm">
-            <p className="text-xs uppercase tracking-[0.2em] text-ink/55">02</p>
             <h3 className="mt-2 font-title text-2xl">Built for Busy Days</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">
               Take-out and delivery that help people get a satisfying lunch
@@ -206,7 +204,6 @@ export default function Home() {
             </p>
           </article>
           <article className="fade-up rounded-2xl border border-ink/10 bg-white/65 p-6 backdrop-blur-sm">
-            <p className="text-xs uppercase tracking-[0.2em] text-ink/55">03</p>
             <h3 className="mt-2 font-title text-2xl">Catering Ready</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">
               Office lunches, meetings, and group orders made easy with
