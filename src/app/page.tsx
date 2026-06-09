@@ -12,6 +12,9 @@ const postalCode = process.env.NEXT_PUBLIC_POSTAL_CODE ?? "29501";
 const latitude = process.env.NEXT_PUBLIC_LATITUDE;
 const longitude = process.env.NEXT_PUBLIC_LONGITUDE;
 const phoneHref = `tel:${restaurantPhone.replace(/[^\d+]/g, "")}`;
+const fullAddress = `${streetAddress} Florence, SC ${postalCode}`;
+const mapsHref =
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(fullAddress)}`;
 
 const socialProfiles = [
   process.env.NEXT_PUBLIC_FACEBOOK_URL,
@@ -221,10 +224,15 @@ export default function Home() {
 
         <footer className="mt-10 text-sm text-ink/60">
           <p>The Downtown Deli - Florence • Take-Out & Delivery</p>
-          <p>
-            {streetAddress} Florence, SC {postalCode}
-          </p>
-          <a className="underline-offset-4 hover:underline" href={phoneHref}>
+          <a
+            className="underline-offset-4 hover:underline"
+            href={mapsHref}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {fullAddress}
+          </a><br />
+          <a className="inline-block underline-offset-4 hover:underline" href={phoneHref}>
             {restaurantPhone}
           </a>
         </footer>
