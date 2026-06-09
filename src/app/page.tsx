@@ -55,6 +55,8 @@ export default function Home() {
     image: `${siteUrl}/opengraph-image`,
     url: siteUrl,
     servesCuisine: "Deli",
+    description:
+      "Lunch service Monday to Friday from 11:00 AM to 2:30 PM. Storefront remains open until 5:30 PM for order pickup and pre-prepared foods.",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -83,13 +85,7 @@ export default function Home() {
           "Friday",
         ],
         opens: "11:00",
-        closes: "14:30",
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Sunday",
-        opens: "11:00",
-        closes: "16:00",
+        closes: "17:30",
       },
     ],
   };
@@ -184,7 +180,11 @@ export default function Home() {
               <p className="text-xs uppercase tracking-[0.2em] text-ink/60">
                 Service Hours
               </p>
-              <p className="mt-2 font-medium">Mon - Fri: 11:00 AM - 2:30 PM</p>
+              <p className="mt-2 font-medium">Lunch: Mon - Fri, 11:00 AM - 2:30 PM</p>
+              <p className="font-medium">Storefront: Mon - Fri, 11:00 AM - 5:30 PM</p>
+              <p className="mt-1 text-sm text-ink/70">
+                Pickup and pre-prepared foods available through storefront hours.
+              </p>
             </div>
           </aside>
         </section>
