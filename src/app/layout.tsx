@@ -24,14 +24,15 @@ export const metadata: Metadata = {
     template: "%s | The Downtown Deli - Florence",
   },
   description:
-    "A classy take-out and delivery deli in Florence focused on quality and excellent service.",
+    "Fresh deli food, good portions, and friendly service in Florence, SC.",
   applicationName: "The Downtown Deli - Florence",
   keywords: [
     "The Downtown Deli - Florence",
     "Florence deli",
-    "take-out Florence AL",
-    "delivery Florence AL",
+    "take-out Florence SC",
+    "delivery Florence SC",
     "sandwich shop Florence",
+    "catering Florence SC",
     "quality deli",
   ],
   alternates: {
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "The Downtown Deli - Florence",
     title: "The Downtown Deli - Florence",
     description:
-      "Take-out and delivery deli in Florence with premium ingredients and excellent service.",
+      "Fresh deli food, good portions, and friendly service in Florence, SC.",
     locale: "en_US",
     images: [
       {
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Downtown Deli - Florence",
     description:
-      "Take-out and delivery deli in Florence focused on quality and excellent service.",
+      "Fresh deli food, good portions, and friendly service in Florence, SC.",
     images: ["/opengraph-image"],
   },
   robots: {

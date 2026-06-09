@@ -22,14 +22,14 @@ const socialProfiles = [
 export const metadata: Metadata = {
   title: "Take-Out and Delivery Deli in Florence, SC",
   description:
-    "Order premium deli take-out and delivery from The Downtown Deli - Florence. Crafted sandwiches, quality ingredients, and excellent service.",
+    "Fresh deli food, good portions, and friendly service in Florence, SC. Take-out, delivery, and catering made simple.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Take-Out and Delivery Deli in Florence, SC",
     description:
-      "Order premium deli take-out and delivery from The Downtown Deli - Florence.",
+      "Fresh deli food, good portions, and friendly service. Take-out, delivery, and catering made simple.",
     url: "/",
     images: [
       {
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Take-Out and Delivery Deli in Florence, SC",
     description:
-      "Order premium deli take-out and delivery from The Downtown Deli - Florence.",
+      "Fresh deli food, good portions, and friendly service. Take-out, delivery, and catering made simple.",
     images: ["/opengraph-image"],
   },
 };
@@ -59,7 +59,7 @@ export default function Home() {
     url: siteUrl,
     servesCuisine: "Deli",
     description:
-      "Lunch service Monday to Friday from 11:00 AM to 2:30 PM. Storefront remains open until 5:30 PM for order pickup and pre-prepared foods.",
+      "Fresh sandwiches, wraps, salads, soups, and sides with take-out, delivery, and catering. Lunch service Monday to Friday from 11:00 AM to 2:30 PM. Storefront open until 5:30 PM for pickup and pre-prepared foods.",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
@@ -148,14 +148,13 @@ export default function Home() {
               Take-Out and Delivery Only
             </p>
             <h2 className="font-title text-5xl leading-[0.95] sm:text-6xl lg:text-7xl">
-              Crafted sandwiches.
+              Fresh deli food.
               <br />
-              White-glove service.
+              Made simple.
             </h2>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink/80 sm:text-xl">
-              Every order is built with premium ingredients, strict kitchen
-              standards, and a service mindset that treats your table like our
-              own.
+              We keep lunch easy: fresh sandwiches, wraps, salads, soups, and
+              sides with good portions and friendly service you can count on.
             </p>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
               <a
@@ -165,17 +164,17 @@ export default function Home() {
                 Order Now
               </a>
               <p className="text-sm uppercase tracking-[0.16em] text-ink/60">
-                Fast pickup and local delivery
+                Fast pickup, local delivery, and catering
               </p>
             </div>
           </div>
 
           <aside className="stagger-panel rounded-3xl border border-ink/10 bg-white/70 p-7 backdrop-blur-md sm:p-10">
-            <h3 className="font-title text-3xl">Today&apos;s Promise</h3>
+            <h3 className="font-title text-3xl">What You Can Count On</h3>
             <ul className="mt-6 space-y-4 text-base text-ink/80">
-              <li>House-roasted meats and hand-cut produce</li>
-              <li>Premium cheeses and artisan breads</li>
-              <li>Attentive updates from kitchen to doorstep</li>
+              <li>Simple, fresh deli food without unnecessary fuss</li>
+              <li>Good portions at a fair value</li>
+              <li>Friendly, professional service that respects your time</li>
             </ul>
             <div className="mt-8 border-t border-ink/10 pt-6">
               <p className="text-xs uppercase tracking-[0.2em] text-ink/60">
@@ -193,26 +192,26 @@ export default function Home() {
         <section className="mt-16 grid gap-5 sm:grid-cols-3">
           <article className="fade-up rounded-2xl border border-ink/10 bg-white/65 p-6 backdrop-blur-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-ink/55">01</p>
-            <h3 className="mt-2 font-title text-2xl">Quality First</h3>
+            <h3 className="mt-2 font-title text-2xl">Focused Menu</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">
-              We source ingredients with care and prepare each order fresh for
-              every customer.
+              Sandwiches, wraps, salads, soups, and sides made for speed,
+              consistency, and easy ordering.
             </p>
           </article>
           <article className="fade-up rounded-2xl border border-ink/10 bg-white/65 p-6 backdrop-blur-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-ink/55">02</p>
-            <h3 className="mt-2 font-title text-2xl">Delivery Precision</h3>
+            <h3 className="mt-2 font-title text-2xl">Built for Busy Days</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">
-              Organized packaging and timing keep your meal exactly as intended
-              on arrival.
+              Take-out and delivery that help people get a satisfying lunch
+              without slowing down their schedule.
             </p>
           </article>
           <article className="fade-up rounded-2xl border border-ink/10 bg-white/65 p-6 backdrop-blur-sm">
             <p className="text-xs uppercase tracking-[0.2em] text-ink/55">03</p>
-            <h3 className="mt-2 font-title text-2xl">Genuine Hospitality</h3>
+            <h3 className="mt-2 font-title text-2xl">Catering Ready</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink/75">
-              Friendly communication, dependable service, and details handled
-              with pride.
+              Office lunches, meetings, and group orders made easy with
+              dependable deli options and straightforward service.
             </p>
           </article>
         </section>

@@ -26,7 +26,7 @@ export default function OpengraphImage() {
         }}
       >
         <div style={{ fontSize: 28, letterSpacing: "0.18em", textTransform: "uppercase" }}>
-          Florence, AL
+          Florence, SC
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: "20px", maxWidth: "900px" }}>
           <div
