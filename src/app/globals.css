@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f3f4f1;
+  --foreground: #1f2421;
+  --ivory: #f3f4f1;
+  --ink: #1f2421;
+  --claret: #3e5a54;
+  --gold-mist: #c9d8e8;
+  --claret-mist: #b8c6ad;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-title: var(--font-cormorant);
+  --font-sans: var(--font-work-sans);
+  --color-ivory: var(--ivory);
+  --color-ink: var(--ink);
+  --color-claret: var(--claret);
+  --color-gold-mist: var(--gold-mist);
+  --color-claret-mist: var(--claret-mist);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-work-sans), "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.grain-overlay {
+  background-image: radial-gradient(rgba(28, 26, 23, 0.08) 0.5px, transparent 0.5px);
+  background-size: 4px 4px;
+  mix-blend-mode: multiply;
+}
+
+.stagger-panel {
+  animation: rise-in 650ms ease-out both;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(14px);
+  animation: rise-in 700ms ease-out forwards;
+}
+
+.fade-up:nth-of-type(2) {
+  animation-delay: 120ms;
+}
+
+.fade-up:nth-of-type(3) {
+  animation-delay: 240ms;
+}
+
+@keyframes rise-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
