@@ -17,7 +17,7 @@ const socialProfiles = [
 ].filter((value): value is string => Boolean(value));
 
 export const metadata: Metadata = {
-  title: "Take-Out and Delivery Deli in Florence, AL",
+  title: "Take-Out and Delivery Deli in Florence, SC",
   description:
     "Order premium deli take-out and delivery from The Downtown Deli - Florence. Crafted sandwiches, quality ingredients, and excellent service.",
   alternates: {
